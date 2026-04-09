@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 
 // Nhớ thay YOUR_MAPBOX_API_KEY bằng token của bạn
-mapboxgl.accessToken =  '';
+mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_API_KEY || "";
 
 const MapComponent = () => {
   // Sử dụng HTMLDivElement thay vì HTMLElement
